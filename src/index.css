@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
