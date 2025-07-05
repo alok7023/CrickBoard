@@ -31,27 +31,57 @@ const Register: React.FC = () => {
   };
 
   const validateInput = (data: RegisterData) => {
-    if (!data.username) return enqueueSnackbar("Username is required", { variant: "warning" }), false;
-    if (data.username.length < 6) return enqueueSnackbar("Username must be at least 6 characters", { variant: "warning" }), false;
-    if (!data.password) return enqueueSnackbar("Password is required", { variant: "warning" }), false;
-    if (data.password.length < 6) return enqueueSnackbar("Password must be at least 6 characters", { variant: "warning" }), false;
-    if (data.password !== data.confirmPassword) return enqueueSnackbar("Passwords do not match", { variant: "warning" }), false;
+    if (!data.username)
+      return (
+        enqueueSnackbar("Username is required", { variant: "warning" }), false
+      );
+    if (data.username.length < 6)
+      return (
+        enqueueSnackbar("Username must be at least 6 characters", {
+          variant: "warning",
+        }),
+        false
+      );
+    if (!data.password)
+      return (
+        enqueueSnackbar("Password is required", { variant: "warning" }), false
+      );
+    if (data.password.length < 6)
+      return (
+        enqueueSnackbar("Password must be at least 6 characters", {
+          variant: "warning",
+        }),
+        false
+      );
+    if (data.password !== data.confirmPassword)
+      return (
+        enqueueSnackbar("Passwords do not match", { variant: "warning" }), false
+      );
     return true;
   };
 
   const register = (formData: RegisterData) => {
     if (validateInput(formData)) {
+      console.log("Form Data:", formData);
       const existingUser = localStorage.getItem("user");
+      console.log("Existing User:", existingUser);
+
       if (existingUser) {
-        enqueueSnackbar("User already registered", { variant: "error" });
-        return;
+        const user = JSON.parse(existingUser);
+        if (user.username === formData.username) {
+          enqueueSnackbar("User already registered", { variant: "error" });
+          return;
+        }
       }
       setLoading(true);
       setTimeout(() => {
-        localStorage.setItem("user", JSON.stringify({
-          username: formData.username,
-          password: formData.password,
-        }));
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            username: formData.username,
+            password: formData.password,
+          })
+        );
         enqueueSnackbar("Registered successfully", { variant: "success" });
         navigate("/login");
         setLoading(false);
@@ -61,13 +91,26 @@ const Register: React.FC = () => {
 
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    //   sx={{ minHeight: "100vh", backgroundImage: "url('https://www.transparenttextures.com/patterns/white-wall-3.png')", backgroundSize: "cover" }}
+      sx={{
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "flex-start",
+        minHeight: "100vh",
+        boxSizing: "border-box",
+        px: { xs: 2, md: 4 },
+        pt: { xs: 4, md: 6 },
+      }}
     >
-      <Box className="form">
+      <Box
+        className="form"
+        sx={{
+          backgroundColor: "#fff",
+          borderRadius: 2,
+          boxShadow: 3,
+          width: { xs: "100%", sm: "550px" },
+          mr: { xs: 0, md: 6 },
+        }}
+      >
         <Stack spacing={2}>
           <Typography variant="h5" className="title">
             Register
@@ -109,7 +152,10 @@ const Register: React.FC = () => {
             </Button>
           )}
           <Typography variant="body2" className="secondary-action">
-            Already have an account? <Link to="/login" className="link">Login here</Link>
+            Already have an account?{" "}
+            <Link to="/login" className="link">
+              Login here
+            </Link>
           </Typography>
         </Stack>
       </Box>

@@ -10,7 +10,7 @@ import {
 import { useSnackbar } from "notistack";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import backGroundImage from "../assets/cricket.jpg"; // Assuming you have a background image
+import "./Login.css";
 
 interface LoginData {
   username: string;
@@ -77,18 +77,26 @@ const Login: React.FC = () => {
 
   return (
     <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    //   sx={{
-    //     minHeight: "100vh",
-    //     backgroundImage:
-    //       `url(${backGroundImage})`,
-    //     backgroundSize: "cover",
-    //   }}
+      sx={{
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "flex-start",
+        minHeight: "100vh",
+        boxSizing: "border-box",
+        px: { xs: 2, md: 4 },
+        pt: { xs: 4, md: 6 },
+      }}
     >
-      <Box className="form">
+      <Box
+        className="form"
+        sx={{
+          backgroundColor: "#fff",
+          borderRadius: 2,
+          boxShadow: 3,
+          width: { xs: "100%", sm: "550px" },
+          mr: { xs: 0, md: 6 },
+        }}
+      >
         <Stack spacing={2}>
           <Typography variant="h5" className="title">
             Login

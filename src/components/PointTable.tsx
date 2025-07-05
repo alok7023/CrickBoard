@@ -1,13 +1,6 @@
 import React from "react";
 import data from "../utils/PointTableData.json";
-import {
-  Typography,
-  Avatar,
-  Box,
-  Chip,
-  Grid,
-  Paper,
-} from "@mui/material";
+import { Typography, Avatar, Box, Chip, Grid, Paper } from "@mui/material";
 
 interface TeamData {
   pos: number;
@@ -30,8 +23,13 @@ const PointsTable: React.FC = () => {
   const teams: TeamData[] = data;
 
   return (
-    <Box>
-      <Typography variant="h5" gutterBottom align="center">
+    <Box sx={{ padding: 4 }}>
+      <Typography
+        variant="h5"
+        gutterBottom
+        align="center"
+        sx={{ color: "#f5f5f5" }}
+      >
         Points Table
       </Typography>
 
@@ -104,25 +102,25 @@ const PointsTable: React.FC = () => {
                   </Box>
                 </Grid>
 
-                <Grid item xs={0.9}>
+                <Grid item xs={1}>
                   <Typography variant="body2">{team.p}</Typography>
                 </Grid>
                 <Grid item xs={1}>
                   <Typography variant="body2">{team.w}</Typography>
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item xs={1.1}>
                   <Typography variant="body2">{team.l}</Typography>
                 </Grid>
-                <Grid item xs={1.2}>
+                <Grid item xs={1.3}>
                   <Typography variant="body2">{team.nr}</Typography>
                 </Grid>
-                <Grid item xs={1}>
+                <Grid item xs={1.1}>
                   <Typography variant="body2">{team.pts}</Typography>
                 </Grid>
                 <Grid item xs={1.5}>
                   <Typography variant="body2">{team.nrr}</Typography>
                 </Grid>
-                <Grid item xs={2.4}>
+                <Grid item xs={2}>
                   <Box display="flex" gap={0.5} flexWrap="wrap">
                     {team.recent_form.map((result, i) => (
                       <Chip

@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -16,6 +22,7 @@ import Register from "./components/Register";
 import ProtectedRoute from "./components/ProtectedRoutes";
 import { useAuth } from "./context/AuthContext";
 
+// AppContent renders the header and routes
 const AppContent: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
@@ -27,8 +34,8 @@ const AppContent: React.FC = () => {
 
   return (
     <>
-      {/* AppBar Header */}
-      <AppBar position="static" sx={{ backgroundColor: "#0d47a1" }}>
+      {/* AppBar */}
+      <AppBar position="static" sx={{ backgroundColor: "#45c09f" }}>
         <Toolbar sx={{ gap: 2, justifyContent: "space-between" }}>
           <Box display="flex" gap={2}>
             {isAuthenticated && (
@@ -65,21 +72,15 @@ const AppContent: React.FC = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Main Content */}
-      <Box
-        sx={{
-          minHeight: "100vh",
-          backgroundColor: "background.default",
-          paddingY: 4,
-        }}
-      >
-        <Container maxWidth="lg">
+      {/* Main content container */}
+      <Box sx={{ paddingY: 4 }}>
+        <Container maxWidth={false} disableGutters>
           {isAuthenticated && (
             <Typography
               variant="h4"
               gutterBottom
               align="center"
-              sx={{ color: "primary.main", fontWeight: 600 }}
+              sx={{ color: "red", fontWeight: 600 }}
             >
               IPL T20 Dashboard
             </Typography>
@@ -119,10 +120,24 @@ const AppContent: React.FC = () => {
   );
 };
 
+// App root with global background image
 const App: React.FC = () => {
   return (
     <Router>
-      <AppContent />
+      <Box
+        sx={{
+          minHeight: "100vh",
+          overflow: "hidden",
+          backgroundImage: `url("/assets/BackgroundCricket.jpg")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          overflowX: "hidden",
+        }}
+      >
+        <AppContent />
+      </Box>
     </Router>
   );
 };

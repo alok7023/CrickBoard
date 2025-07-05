@@ -18,8 +18,6 @@ root.render(
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
       >
         <AuthProvider>
-          {" "}
-          {/* ✅ Wrap App here */}
           <App />
         </AuthProvider>
       </SnackbarProvider>
