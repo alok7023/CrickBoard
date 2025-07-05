@@ -24,12 +24,7 @@ const PointsTable: React.FC = () => {
 
   return (
     <Box sx={{ padding: 4 }}>
-      <Typography
-        variant="h5"
-        gutterBottom
-        align="center"
-        sx={{ color: "#f5f5f5" }}
-      >
+      <Typography variant="h5" gutterBottom align="center">
         Points Table
       </Typography>
 
@@ -43,28 +38,37 @@ const PointsTable: React.FC = () => {
           mb: 2,
         }}
       >
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-          flexWrap="wrap"
-        >
-          <Typography variant="subtitle2" sx={{ width: "20px", ml: 2 }}>
-            #
-          </Typography>
-          <Typography variant="subtitle2" sx={{ minWidth: "120px" }}>
-            Team
-          </Typography>
-          <Typography variant="subtitle2">Play</Typography>
-          <Typography variant="subtitle2">Win</Typography>
-          <Typography variant="subtitle2">Loss</Typography>
-          <Typography variant="subtitle2">No Result</Typography>
-          <Typography variant="subtitle2">Points</Typography>
-          <Typography variant="subtitle2">Net Run Rate</Typography>
-          <Typography variant="subtitle2" sx={{ minWidth: "230px" }}>
-            Recent
-          </Typography>
-        </Box>
+        <Grid container alignItems="center" spacing={1}>
+          <Grid item xs={0.8}>
+            <Typography variant="subtitle2" align="center">
+              #
+            </Typography>
+          </Grid>
+          <Grid item xs={2}>
+            <Typography variant="subtitle2">Team</Typography>
+          </Grid>
+          <Grid item xs={0.9}>
+            <Typography variant="subtitle2">P</Typography>
+          </Grid>
+          <Grid item xs={1}>
+            <Typography variant="subtitle2">W</Typography>
+          </Grid>
+          <Grid item xs={1}>
+            <Typography variant="subtitle2">L</Typography>
+          </Grid>
+          <Grid item xs={1.2}>
+            <Typography variant="subtitle2">NR</Typography>
+          </Grid>
+          <Grid item xs={1}>
+            <Typography variant="subtitle2">Pts</Typography>
+          </Grid>
+          <Grid item xs={1.5}>
+            <Typography variant="subtitle2">NRR</Typography>
+          </Grid>
+          <Grid item xs={2.4}>
+            <Typography variant="subtitle2">Recent</Typography>
+          </Grid>
+        </Grid>
       </Paper>
 
       {/* Team Rows */}
@@ -72,18 +76,25 @@ const PointsTable: React.FC = () => {
         {teams.map((team, index) => (
           <Grid item xs={12} key={team.pos}>
             <Paper
-              elevation={4}
+              elevation={3}
               sx={{
                 borderRadius: 3,
                 padding: 2,
                 backgroundColor: colors[index % colors.length],
+                transition: "all 0.3s ease",
+                cursor: "pointer",
+                "&:hover": {
+                  boxShadow: 6,
+                  transform: "scale(1.01)",
+                },
               }}
             >
               <Grid container alignItems="center" spacing={1}>
-                <Grid item xs={0.8} sx={{ ml: 2 }}>
+                <Grid item xs={0.8}>
                   <Typography
                     variant="subtitle1"
-                    sx={{ textAlign: "left", minWidth: "20px" }}
+                    align="center"
+                    sx={{ minWidth: "20px" }}
                   >
                     {team.pos}
                   </Typography>
@@ -102,25 +113,25 @@ const PointsTable: React.FC = () => {
                   </Box>
                 </Grid>
 
-                <Grid item xs={1}>
+                <Grid item xs={0.9}>
                   <Typography variant="body2">{team.p}</Typography>
                 </Grid>
                 <Grid item xs={1}>
                   <Typography variant="body2">{team.w}</Typography>
                 </Grid>
-                <Grid item xs={1.1}>
+                <Grid item xs={1}>
                   <Typography variant="body2">{team.l}</Typography>
                 </Grid>
-                <Grid item xs={1.3}>
+                <Grid item xs={1.2}>
                   <Typography variant="body2">{team.nr}</Typography>
                 </Grid>
-                <Grid item xs={1.1}>
+                <Grid item xs={1}>
                   <Typography variant="body2">{team.pts}</Typography>
                 </Grid>
                 <Grid item xs={1.5}>
                   <Typography variant="body2">{team.nrr}</Typography>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={2.4}>
                   <Box display="flex" gap={0.5} flexWrap="wrap">
                     {team.recent_form.map((result, i) => (
                       <Chip

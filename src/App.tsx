@@ -80,7 +80,7 @@ const AppContent: React.FC = () => {
               variant="h4"
               gutterBottom
               align="center"
-              sx={{ color: "red", fontWeight: 600 }}
+              sx={{ color: "#fff", fontWeight: 600 }}
             >
               IPL T20 Dashboard
             </Typography>

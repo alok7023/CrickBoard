@@ -1,5 +1,5 @@
 import React from "react";
-import matchData from "../utils/MatchScheduleData.json"; // Adjust the path as necessary
+import matchData from "../utils/MatchScheduleData.json";
 import {
   Card,
   CardContent,
@@ -26,17 +26,36 @@ const MatchSchedule: React.FC = () => {
   const matches: Match[] = matchData;
 
   return (
-    <Box>
+    <Box sx={{ padding: 4 }}>
       <Typography variant="h5" gutterBottom align="center">
         Upcoming Matches
       </Typography>
+
       <Grid container spacing={3}>
         {matches.map((match) => (
-          <Grid item xs={12} sm={6} md={4} key={match.id}>
-            <Card sx={{ boxShadow: 3, borderRadius: 3 }}>
+          <Grid item xs={12} sm={6} key={match.id}>
+            <Card
+              sx={{
+                borderRadius: 3,
+                backgroundColor: "#f1f8e9", // Light green shade
+                boxShadow: 3,
+                transition: "transform 0.3s ease",
+                "&:hover": {
+                  transform: "scale(1.02)",
+                },
+              }}
+            >
               <CardHeader
-                title={`${match.date} | ${match.time}`}
-                subheader={match.venue}
+                title={
+                  <Typography variant="subtitle1" fontWeight={600}>
+                    {match.date} | {match.time}
+                  </Typography>
+                }
+                subheader={
+                  <Typography variant="body2" color="text.secondary">
+                    {match.venue}
+                  </Typography>
+                }
               />
               <Divider />
               <CardContent>
@@ -44,6 +63,8 @@ const MatchSchedule: React.FC = () => {
                   display="flex"
                   alignItems="center"
                   justifyContent="space-around"
+                  flexWrap="wrap"
+                  gap={2}
                 >
                   <Box display="flex" alignItems="center" gap={1}>
                     <Avatar src={match.team1Logo} alt={match.team1} />
