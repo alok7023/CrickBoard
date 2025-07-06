@@ -1,0 +1,535 @@
+[
+  {
+    "id": 10,
+    "matchNumber": 10,
+    "date": "2025-05-28",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "team1": "GT",
+    "team2": "CSK",
+    "winner": "GT",
+    "result": "GT won by 7 wickets",
+    "team1Score": "192/3 (18.5)",
+    "team2Score": "189/6 (20)",
+    "team1Batting": [
+      {
+        "name": "Shubman Gill",
+        "r": 85,
+        "b": 52,
+        "4s": 9,
+        "6s": 3,
+        "sr": 163.4
+      },
+      {
+        "name": "David Miller",
+        "r": 45,
+        "b": 30,
+        "4s": 4,
+        "6s": 2,
+        "sr": 150.0
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Ruturaj Gaikwad",
+        "r": 73,
+        "b": 50,
+        "4s": 7,
+        "6s": 2,
+        "sr": 146.0
+      },
+      { "name": "MS Dhoni", "r": 28, "b": 12, "4s": 2, "6s": 2, "sr": 233.3 }
+    ],
+    "team1Bowling": [
+      { "name": "Rashid Khan", "o": 4, "m": 0, "r": 24, "w": 2, "econ": 6.0 }
+    ],
+    "team2Bowling": [
+      {
+        "name": "Deepak Chahar",
+        "o": 3.5,
+        "m": 0,
+        "r": 42,
+        "w": 1,
+        "econ": 10.95
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "matchNumber": 9,
+    "date": "2025-05-26",
+    "venue": "Eden Gardens, Kolkata",
+    "team1": "KKR",
+    "team2": "SRH",
+    "winner": "KKR",
+    "result": "KKR won by 4 runs",
+    "team1Score": "178/6 (20)",
+    "team2Score": "174/8 (20)",
+    "team1Batting": [
+      {
+        "name": "Shreyas Iyer",
+        "r": 67,
+        "b": 45,
+        "4s": 6,
+        "6s": 2,
+        "sr": 148.8
+      },
+      {
+        "name": "Andre Russell",
+        "r": 35,
+        "b": 15,
+        "4s": 2,
+        "6s": 3,
+        "sr": 233.3
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Heinrich Klaasen",
+        "r": 78,
+        "b": 42,
+        "4s": 5,
+        "6s": 6,
+        "sr": 185.7
+      },
+      {
+        "name": "Abhishek Sharma",
+        "r": 32,
+        "b": 28,
+        "4s": 4,
+        "6s": 1,
+        "sr": 114.2
+      }
+    ],
+    "team1Bowling": [
+      { "name": "Sunil Narine", "o": 4, "m": 0, "r": 22, "w": 3, "econ": 5.5 }
+    ],
+    "team2Bowling": [
+      { "name": "Pat Cummins", "o": 4, "m": 0, "r": 32, "w": 2, "econ": 8.0 }
+    ]
+  },
+  {
+    "id": 8,
+    "matchNumber": 8,
+    "date": "2025-05-24",
+    "venue": "Arun Jaitley Stadium, Delhi",
+    "team1": "DC",
+    "team2": "PBKS",
+    "winner": "PBKS",
+    "result": "PBKS won by 5 wickets",
+    "team1Score": "165/8 (20)",
+    "team2Score": "169/5 (19.1)",
+    "team1Batting": [
+      {
+        "name": "Rishabh Pant",
+        "r": 58,
+        "b": 38,
+        "4s": 6,
+        "6s": 2,
+        "sr": 152.6
+      },
+      {
+        "name": "Jake Fraser-McGurk",
+        "r": 42,
+        "b": 24,
+        "4s": 3,
+        "6s": 3,
+        "sr": 175.0
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Shikhar Dhawan",
+        "r": 62,
+        "b": 45,
+        "4s": 7,
+        "6s": 1,
+        "sr": 137.7
+      },
+      {
+        "name": "Liam Livingstone",
+        "r": 38,
+        "b": 20,
+        "4s": 2,
+        "6s": 3,
+        "sr": 190.0
+      }
+    ],
+    "team1Bowling": [
+      { "name": "Kuldeep Yadav", "o": 4, "m": 0, "r": 28, "w": 2, "econ": 7.0 }
+    ],
+    "team2Bowling": [
+      { "name": "Kagiso Rabada", "o": 4, "m": 0, "r": 25, "w": 3, "econ": 6.25 }
+    ]
+  },
+  {
+    "id": 7,
+    "matchNumber": 7,
+    "date": "2025-05-22",
+    "venue": "M. Chinnaswamy Stadium, Bengaluru",
+    "team1": "RCB",
+    "team2": "LSG",
+    "winner": "RCB",
+    "result": "RCB won by 14 runs",
+    "team1Score": "202/4 (20)",
+    "team2Score": "188/7 (20)",
+    "team1Batting": [
+      {
+        "name": "Virat Kohli",
+        "r": 92,
+        "b": 58,
+        "4s": 8,
+        "6s": 5,
+        "sr": 158.6
+      },
+      {
+        "name": "Faf du Plessis",
+        "r": 45,
+        "b": 32,
+        "4s": 5,
+        "6s": 1,
+        "sr": 140.6
+      }
+    ],
+    "team2Batting": [
+      { "name": "KL Rahul", "r": 68, "b": 48, "4s": 6, "6s": 2, "sr": 141.6 },
+      {
+        "name": "Marcus Stoinis",
+        "r": 35,
+        "b": 22,
+        "4s": 3,
+        "6s": 2,
+        "sr": 159.0
+      }
+    ],
+    "team1Bowling": [
+      { "name": "Mohammed Siraj", "o": 4, "m": 0, "r": 32, "w": 2, "econ": 8.0 }
+    ],
+    "team2Bowling": [
+      { "name": "Ravi Bishnoi", "o": 4, "m": 0, "r": 38, "w": 1, "econ": 9.5 }
+    ]
+  },
+  {
+    "id": 6,
+    "matchNumber": 6,
+    "date": "2025-05-20",
+    "venue": "Wankhede Stadium, Mumbai",
+    "team1": "MI",
+    "team2": "RR",
+    "winner": "RR",
+    "result": "RR won by 6 wickets",
+    "team1Score": "175/8 (20)",
+    "team2Score": "179/4 (18.3)",
+    "team1Batting": [
+      {
+        "name": "Rohit Sharma",
+        "r": 52,
+        "b": 40,
+        "4s": 6,
+        "6s": 1,
+        "sr": 130.0
+      },
+      {
+        "name": "Hardik Pandya",
+        "r": 38,
+        "b": 25,
+        "4s": 3,
+        "6s": 2,
+        "sr": 152.0
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Sanju Samson",
+        "r": 74,
+        "b": 42,
+        "4s": 7,
+        "6s": 4,
+        "sr": 176.1
+      },
+      { "name": "Jos Buttler", "r": 45, "b": 30, "4s": 5, "6s": 1, "sr": 150.0 }
+    ],
+    "team1Bowling": [
+      { "name": "Jasprit Bumrah", "o": 4, "m": 0, "r": 26, "w": 1, "econ": 6.5 }
+    ],
+    "team2Bowling": [
+      {
+        "name": "Yuzvendra Chahal",
+        "o": 4,
+        "m": 0,
+        "r": 28,
+        "w": 3,
+        "econ": 7.0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "matchNumber": 5,
+    "date": "2025-05-18",
+    "venue": "MA Chidambaram Stadium, Chennai",
+    "team1": "CSK",
+    "team2": "SRH",
+    "winner": "CSK",
+    "result": "CSK won by 20 runs",
+    "team1Score": "195/4 (20)",
+    "team2Score": "175/9 (20)",
+    "team1Batting": [
+      {
+        "name": "Ruturaj Gaikwad",
+        "r": 78,
+        "b": 50,
+        "4s": 8,
+        "6s": 3,
+        "sr": 156.0
+      },
+      { "name": "Shivam Dube", "r": 45, "b": 22, "4s": 3, "6s": 4, "sr": 204.5 }
+    ],
+    "team2Batting": [
+      {
+        "name": "Travis Head",
+        "r": 62,
+        "b": 35,
+        "4s": 7,
+        "6s": 3,
+        "sr": 177.1
+      },
+      {
+        "name": "Aiden Markram",
+        "r": 32,
+        "b": 28,
+        "4s": 3,
+        "6s": 1,
+        "sr": 114.2
+      }
+    ],
+    "team1Bowling": [
+      {
+        "name": "Matheesha Pathirana",
+        "o": 4,
+        "m": 0,
+        "r": 24,
+        "w": 3,
+        "econ": 6.0
+      }
+    ],
+    "team2Bowling": [
+      { "name": "T Natarajan", "o": 4, "m": 0, "r": 42, "w": 1, "econ": 10.5 }
+    ]
+  },
+  {
+    "id": 4,
+    "matchNumber": 4,
+    "date": "2025-05-16",
+    "venue": "Rajiv Gandhi Stadium, Hyderabad",
+    "team1": "SRH",
+    "team2": "PBKS",
+    "winner": "SRH",
+    "result": "SRH won by 8 wickets",
+    "team1Score": "168/2 (16.3)",
+    "team2Score": "165/7 (20)",
+    "team1Batting": [
+      {
+        "name": "Abhishek Sharma",
+        "r": 75,
+        "b": 42,
+        "4s": 7,
+        "6s": 5,
+        "sr": 178.5
+      },
+      { "name": "Travis Head", "r": 52, "b": 30, "4s": 6, "6s": 3, "sr": 173.3 }
+    ],
+    "team2Batting": [
+      {
+        "name": "Shikhar Dhawan",
+        "r": 58,
+        "b": 45,
+        "4s": 6,
+        "6s": 1,
+        "sr": 128.8
+      },
+      {
+        "name": "Jonny Bairstow",
+        "r": 42,
+        "b": 32,
+        "4s": 5,
+        "6s": 1,
+        "sr": 131.2
+      }
+    ],
+    "team1Bowling": [
+      {
+        "name": "Bhuvneshwar Kumar",
+        "o": 4,
+        "m": 0,
+        "r": 24,
+        "w": 2,
+        "econ": 6.0
+      }
+    ],
+    "team2Bowling": [
+      {
+        "name": "Arshdeep Singh",
+        "o": 3.3,
+        "m": 0,
+        "r": 38,
+        "w": 0,
+        "econ": 10.85
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "matchNumber": 3,
+    "date": "2025-05-14",
+    "venue": "DY Patil Stadium, Navi Mumbai",
+    "team1": "MI",
+    "team2": "GT",
+    "winner": "GT",
+    "result": "GT won by 18 runs",
+    "team1Score": "178/9 (20)",
+    "team2Score": "196/5 (20)",
+    "team1Batting": [
+      {
+        "name": "Suryakumar Yadav",
+        "r": 82,
+        "b": 45,
+        "4s": 7,
+        "6s": 6,
+        "sr": 182.2
+      },
+      { "name": "Tilak Varma", "r": 35, "b": 28, "4s": 3, "6s": 1, "sr": 125.0 }
+    ],
+    "team2Batting": [
+      {
+        "name": "Shubman Gill",
+        "r": 96,
+        "b": 58,
+        "4s": 9,
+        "6s": 4,
+        "sr": 165.5
+      },
+      {
+        "name": "Sai Sudharsan",
+        "r": 45,
+        "b": 32,
+        "4s": 5,
+        "6s": 1,
+        "sr": 140.6
+      }
+    ],
+    "team1Bowling": [
+      { "name": "Piyush Chawla", "o": 4, "m": 0, "r": 32, "w": 2, "econ": 8.0 }
+    ],
+    "team2Bowling": [
+      { "name": "Mohit Sharma", "o": 4, "m": 0, "r": 28, "w": 3, "econ": 7.0 }
+    ]
+  },
+  {
+    "id": 2,
+    "matchNumber": 2,
+    "date": "2025-05-12",
+    "venue": "Eden Gardens, Kolkata",
+    "team1": "KKR",
+    "team2": "DC",
+    "winner": "KKR",
+    "result": "KKR won by 7 wickets",
+    "team1Score": "182/3 (18.2)",
+    "team2Score": "178/6 (20)",
+    "team1Batting": [
+      { "name": "Phil Salt", "r": 68, "b": 42, "4s": 7, "6s": 3, "sr": 161.9 },
+      {
+        "name": "Venkatesh Iyer",
+        "r": 45,
+        "b": 30,
+        "4s": 5,
+        "6s": 1,
+        "sr": 150.0
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Rishabh Pant",
+        "r": 72,
+        "b": 48,
+        "4s": 6,
+        "6s": 4,
+        "sr": 150.0
+      },
+      {
+        "name": "David Warner",
+        "r": 35,
+        "b": 28,
+        "4s": 4,
+        "6s": 1,
+        "sr": 125.0
+      }
+    ],
+    "team1Bowling": [
+      {
+        "name": "Varun Chakravarthy",
+        "o": 4,
+        "m": 0,
+        "r": 26,
+        "w": 2,
+        "econ": 6.5
+      }
+    ],
+    "team2Bowling": [
+      { "name": "Kuldeep Yadav", "o": 4, "m": 0, "r": 32, "w": 1, "econ": 8.0 }
+    ]
+  },
+  {
+    "id": 1,
+    "matchNumber": 1,
+    "date": "2025-05-10",
+    "venue": "Wankhede Stadium, Mumbai",
+    "team1": "MI",
+    "team2": "RCB",
+    "winner": "MI",
+    "result": "MI won by 5 wickets",
+    "team1Score": "185/5 (19.2)",
+    "team2Score": "181/7 (20)",
+    "team1Batting": [
+      {
+        "name": "Rohit Sharma",
+        "r": 45,
+        "b": 32,
+        "4s": 5,
+        "6s": 2,
+        "sr": 140.6
+      },
+      {
+        "name": "Ishan Kishan",
+        "r": 60,
+        "b": 40,
+        "4s": 6,
+        "6s": 3,
+        "sr": 150.0
+      }
+    ],
+    "team2Batting": [
+      {
+        "name": "Faf du Plessis",
+        "r": 70,
+        "b": 48,
+        "4s": 8,
+        "6s": 2,
+        "sr": 145.8
+      },
+      { "name": "Virat Kohli", "r": 35, "b": 30, "4s": 3, "6s": 1, "sr": 116.6 }
+    ],
+    "team1Bowling": [
+      { "name": "Jasprit Bumrah", "o": 4, "m": 0, "r": 28, "w": 2, "econ": 7.0 }
+    ],
+    "team2Bowling": [
+      {
+        "name": "Mohammed Siraj",
+        "o": 4,
+        "m": 0,
+        "r": 35,
+        "w": 1,
+        "econ": 8.75
+      }
+    ]
+  }
+]

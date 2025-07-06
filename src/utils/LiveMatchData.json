@@ -1,0 +1,48 @@
+{
+  "status": "Live",
+  "team1": "CSK",
+  "team1Logo": "assets/cskLogo.png",
+  "team2": "MI",
+  "team2Logo": "assets/miLogo.png",
+  "team1Score": "185/4 (17.2)",
+  "team2Score": "181/7 (20)",
+  "venue": "Wankhede Stadium, Mumbai",
+  "time": "Today, 7:30 PM",
+  "currentRunRate": "9.25",
+  "requiredRunRate": "8.50",
+  "target": "182",
+  "batsmen": [
+    {
+      "name": "Ruturaj Gaikwad",
+      "r": 78,
+      "b": 52,
+      "4s": 8,
+      "6s": 3,
+      "sr": 150.0,
+      "out": "not out"
+    },
+    {
+      "name": "Shivam Dube",
+      "r": 45,
+      "b": 22,
+      "4s": 3,
+      "6s": 4,
+      "sr": 204.5,
+      "out": "c Rohit b Bumrah"
+    }
+  ],
+  "bowlers": [
+    {
+      "name": "Jasprit Bumrah",
+      "o": 3.2,
+      "m": 0,
+      "r": 28,
+      "w": 2,
+      "econ": 8.4
+    },
+    { "name": "Hardik Pandya", "o": 3, "m": 0, "r": 35, "w": 1, "econ": 11.67 }
+  ],
+  "partnership": "72 (42)",
+  "lastWicket": "Dube 45 (22)",
+  "commentary": "CSK need 7 runs from 16 balls"
+}

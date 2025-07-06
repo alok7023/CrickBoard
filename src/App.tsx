@@ -6,23 +6,15 @@ import {
   Link,
   useNavigate,
 } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  Button,
-  Container,
-  Typography,
-  Box,
-} from "@mui/material";
+import { AppBar, Toolbar, Button, Container, Box } from "@mui/material";
 import LiveMatch from "./components/LiveMatch";
 import PointsTable from "./components/PointTable";
-import MatchSchedule from "./components/MatchSchedule";
+import MatchSchedule from "./components/MatchHistory";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import ProtectedRoute from "./components/ProtectedRoutes";
 import { useAuth } from "./context/AuthContext";
 
-// AppContent renders the header and routes
 const AppContent: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
@@ -34,7 +26,6 @@ const AppContent: React.FC = () => {
 
   return (
     <>
-      {/* AppBar */}
       <AppBar position="static" sx={{ backgroundColor: "#45c09f" }}>
         <Toolbar sx={{ gap: 2, justifyContent: "space-between" }}>
           <Box display="flex" gap={2}>
@@ -47,7 +38,7 @@ const AppContent: React.FC = () => {
                   Points Table
                 </Button>
                 <Button color="inherit" component={Link} to="/schedule">
-                  Match Schedule
+                  Match History
                 </Button>
               </>
             )}
@@ -72,10 +63,9 @@ const AppContent: React.FC = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Main content container */}
       <Box sx={{ paddingY: 4 }}>
         <Container maxWidth={false} disableGutters>
-          {isAuthenticated && (
+          {/* {isAuthenticated && (
             <Typography
               variant="h4"
               gutterBottom
@@ -84,7 +74,7 @@ const AppContent: React.FC = () => {
             >
               IPL T20 Dashboard
             </Typography>
-          )}
+          )} */}
 
           <Routes>
             <Route path="/login" element={<Login />} />
@@ -120,7 +110,6 @@ const AppContent: React.FC = () => {
   );
 };
 
-// App root with global background image
 const App: React.FC = () => {
   return (
     <Router>

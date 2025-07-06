@@ -24,11 +24,6 @@ const PointsTable: React.FC = () => {
 
   return (
     <Box sx={{ padding: 4 }}>
-      <Typography variant="h5" gutterBottom align="center">
-        Points Table
-      </Typography>
-
-      {/* Table Header */}
       <Paper
         elevation={2}
         sx={{
@@ -71,7 +66,6 @@ const PointsTable: React.FC = () => {
         </Grid>
       </Paper>
 
-      {/* Team Rows */}
       <Grid container spacing={2}>
         {teams.map((team, index) => (
           <Grid item xs={12} key={team.pos}>
