@@ -22,12 +22,14 @@ A responsive and interactive React application that displays IPL 2025 match deta
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/alok7023/CrickBoard.git
    cd ipl-t20-dashboard
    ```
 
 2. **Install dependencies for the frontend**
+
    ```bash
    cd frontend
    npm install
@@ -62,10 +64,11 @@ ipl-t20-dashboard/
 ## 🧪 Testing
 
 Run the following command to execute tests:
+
 ```bash
 npm test
 ```
 
 ## 🌐 Live Demo
 
-[Live Demo Link](#) (Add your deployed link here)
+[Live Demo Link](https://crick-board-blush.vercel.app/login) 
