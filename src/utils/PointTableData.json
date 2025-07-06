@@ -2,7 +2,7 @@
   {
     "pos": 1,
     "team": "PBKS",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
+    "logo": "/assets/pkLogo.png",
     "p": 14,
     "w": 9,
     "l": 4,
@@ -16,7 +16,7 @@
   {
     "pos": 2,
     "team": "RCB",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0f/Royal_Challengers_Bangalore_Logo.svg",
+    "logo": "/assets/rcbLogo.png",
     "p": 14,
     "w": 9,
     "l": 4,
@@ -30,7 +30,7 @@
   {
     "pos": 3,
     "team": "GT",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
+    "logo": "/assets/gtLogo.png",
     "p": 14,
     "w": 9,
     "l": 5,
@@ -44,7 +44,7 @@
   {
     "pos": 4,
     "team": "MI",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/25/Mumbai_Indians_Logo.svg",
+    "logo": "/assets/miLogo.png",
     "p": 14,
     "w": 8,
     "l": 6,
@@ -58,7 +58,7 @@
   {
     "pos": 5,
     "team": "DC",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5f/Delhi_Capitals_Logo.svg",
+    "logo": "/assets/dcLogo.png",
     "p": 14,
     "w": 7,
     "l": 6,
@@ -72,7 +72,7 @@
   {
     "pos": 6,
     "team": "SRH",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Sunrisers_Hyderabad.png",
+    "logo": "/assets/srhLogo.png",
     "p": 14,
     "w": 6,
     "l": 7,
@@ -86,7 +86,7 @@
   {
     "pos": 7,
     "team": "LSG",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Lucknow_Super_Giants_Logo.svg",
+    "logo": "/assets/lsgLogo.png",
     "p": 14,
     "w": 6,
     "l": 8,
@@ -100,7 +100,7 @@
   {
     "pos": 8,
     "team": "KKR",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9a/Kolkata_Knight_Riders_Logo.svg",
+    "logo": "/assets/kkrLogo.png",
     "p": 14,
     "w": 5,
     "l": 7,
@@ -114,7 +114,7 @@
   {
     "pos": 9,
     "team": "RR",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Rajasthan_Royals_Logo.svg",
+    "logo": "/assets/rrLogo.png",
     "p": 14,
     "w": 4,
     "l": 10,
@@ -128,7 +128,7 @@
   {
     "pos": 10,
     "team": "CSK",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2d/Chennai_Super_Kings_Logo.svg",
+    "logo": "/assets/cskLogo.png",
     "p": 14,
     "w": 4,
     "l": 10,
